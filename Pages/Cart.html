@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vexor - Shopping Cart</title>
+    <!-- External CSS files -->
+    <link rel="stylesheet" href="../CSS/Index.css">
+    <link rel="stylesheet" href="../CSS/Cart.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header with navigation -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../images/image.png" alt="Vexor Logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mens.html">Men's Clothing</a></li>
+                <li><a href="womens.html">Women's Clothing</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Your Shopping Cart</h1>
+        <div class="cart-container">
+            <!-- Cart items section -->
+            <section id="cart-items" class="white-container">
+                <!-- Cart items will be dynamically added here -->
+            </section>
+            <!-- Cart summary section -->
+            <section id="cart-summary" class="white-container">
+                <h2>Bill Summary</h2>
+                <!-- Bill summary table -->
+                <table id="bill-table">
+                    <!-- Table header -->
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <!-- Table body for bill items -->
+                    <tbody id="bill-body">
+                        <!-- Bill items will be dynamically added here -->
+                    </tbody>
+                    <!-- Table footer for total cost -->
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Total</td>
+                            <td id="total-cost">Rs.00.00</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <!-- Checkout and clear cart buttons -->
+                <button id="checkout-button" class="checkout-button">Proceed to Checkout</button>
+                <button id="clear-cart-button" class="clear-cart-button">Clear Cart</button>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-left">
+            <p>&copy; 2023 Vexor. All rights reserved.</p>
+        </div>
+        <div class="footer-right">
+            <a href="about.html">About Us</a> | <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+
+    <!-- External JavaScript file -->
+    <script src="../Javascript/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+.cart-container {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.white-container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex: 2;
+}
+
+#cart-items {
+    flex: 2;
+}
+
+#cart-summary {
+    flex: 1;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item-image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-right: 1rem;
+}
+
+.cart-item-info {
+    flex: 1;
+}
+
+.cart-item-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.cart-item-price {
+    color: #4a90e2;
+}
+
+#bill-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+#bill-table th,
+#bill-table td {
+    padding: 0.5rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+#bill-table th {
+    font-weight: bold;
+    background-color: #f8f9fa;
+}
+
+#bill-table tfoot td {
+    font-weight: bold;
+}
+
+.checkout-button,
+.clear-cart-button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.checkout-button {
+    background-color: #4caf50;
+}
+
+.checkout-button:hover {
+    background-color: #45a049;
+}
+
+.clear-cart-button {
+    background-color: #f44336;
+}
+
+.clear-cart-button:hover {
+    background-color: #d32f2f;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.quantity-btn {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.quantity {
+    margin: 0 10px;
+    font-size: 16px;
+}
